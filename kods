@@ -14,8 +14,12 @@ try:
     print(summa, "Skaitļu summa bez Smin un Smax vērtības")
     #ar if un else parāda user vai skaitļu summa ir lielāka par lielāko ievadīto skaitli
     if summa > max(num_list):
-        print(summa, "Summas vērtība ir lielāka par Smax")
+        print(summa, "-summas vērtība ir lielāka par Smax")
     else:
-        print(summa, "summas vērība ir mazāks par Smax")
+        print("Skaitļu summas vērība:", summa , "ir mazāks par Smax")
 except:
         print ("Nepareizs ievades veids. Jāievada skaitļi!")
+
+    
+
+     
