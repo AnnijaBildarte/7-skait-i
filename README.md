@@ -1,0 +1,22 @@
+#izveido tukšu sarakstu, kur vēlāk tiks glabāts user input
+num_list = []
+#range nosaka kāds ir skaits, ko user varēs ievaīt konsolē
+
+try:
+    for n in range(7):
+         numbers = int(input('Ievdiet skaitli: '))
+        #katras nakamais ievadītais skaitlis tiks pievienots saraksta galā ar .append
+         num_list.append(numbers)
+    print("Lielākais skaitlis Smax ir:", max(num_list))
+    print("Mazākais skaitlis Smin ir:", min(num_list))
+     #jānoņem Smin un Smax
+    summa=(sum(num_list)-max(num_list)-min(num_list))
+    print(summa, "Skaitļu summa bez Smin un Smax vērtības")
+    #ar if un else parāda user vai skaitļu summa ir lielāka par lielāko ievadīto skaitli
+    if summa > max(num_list):
+        print(summa, "Summas vērtība ir lielāka par Smax")
+    else:
+        print(summa, "summas vērība ir mazāks par Smax")
+except:
+        print ("Nepareizs ievades veids. Jāievada skaitļi!")
+        
